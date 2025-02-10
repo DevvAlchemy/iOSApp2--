@@ -1,17 +1,19 @@
+
 //
-//  iOSApp2_3_App.swift
-//  iOSApp2(3)
+//  iOSApp2App.swift
+//  iOSApp2
 //
-//  Created by Royal K on 2025-02-10.
+//  Created by Royal K on 2025-02-06.
 //
 
 import SwiftUI
 
 @main
-struct iOSApp2_3_App: App {
+struct ScavengerHuntApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CardsListView()
+                .environmentObject(CardStore(defaultData: true)) // Initialize the store with default data
         }
     }
 }
